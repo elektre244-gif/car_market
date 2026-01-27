@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ContanierCarInfo extends StatelessWidget {
   const ContanierCarInfo({super.key});
@@ -9,16 +10,16 @@ class ContanierCarInfo extends StatelessWidget {
       clipBehavior: Clip.none,
       children: [
         Container(
-          width: 154,
-          height: 183,
+          width: 154.w,
+          height: 183.h,
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(15.r),
             boxShadow: [
               BoxShadow(
                 color: Colors.black,
-                blurRadius: 4,
+                blurRadius: 4.sp,
                 offset: const Offset(0, 4),
               ),
             ],
@@ -32,21 +33,21 @@ class ContanierCarInfo extends StatelessWidget {
                 ),
                 child: Image.asset(
                   'assets/car1.jpg',
-                  height: 103,
+                  height: 90.h,
                   width: double.infinity,
                   fit: BoxFit.cover,
                 ),
               ),
-              const SizedBox(height: 6),
+               SizedBox(height: 6.h),
               Row(
                 children: [
-                  const Expanded(
+                   Expanded(
                     child: Text(
                       '2015 Maruti wagon',
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
-                        fontSize: 10,
+                        fontSize: 10.sp,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -55,72 +56,72 @@ class ContanierCarInfo extends StatelessWidget {
                     Icons.favorite_border_sharp,
                     color: Colors.amberAccent,
                     size: 16,
-                  )
+                  ),
                 ],
               ),
 
-              const SizedBox(height: 2),
+               SizedBox(height: 2.h),
 
               /// details
-              const Text(
+             Text(
                 '43,721 km - petrol - manual',
-                style: TextStyle(
-                  fontSize: 7,
-                  color: Color(0xff807E7E),
-                ),
+                style: TextStyle(fontSize: 7.sp, color: Color(0xff807E7E)),
               ),
 
-              const SizedBox(height: 4),
+               SizedBox(height: 4.h),
 
               /// price
               Row(
-                children: const [
+                children:  [
                   Text(
                     '₹3.11 Lakh',
                     style: TextStyle(
-                      fontSize: 10,
+                      fontSize: 10.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(width: 6),
+                  SizedBox(width: 6.w),
                   Text(
                     '₹3.26 Lakh',
                     style: TextStyle(
-                      fontSize: 7,
+                      fontSize: 7.sp,
                       color: Color(0xffA6A6A6),
                       decoration: TextDecoration.lineThrough,
                     ),
-                  )
+                  ),
                 ],
               ),
             ],
           ),
         ),
         Positioned(
-          bottom: -18,
+          bottom: -25,
           left: 16,
           right: 16,
           child: SizedBox(
-            height: 32,
+            height: 25.h,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(25),
+                  borderRadius: BorderRadius.circular(25.r),
                 ),
                 elevation: 6,
               ),
               onPressed: () {},
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children:  [
                   Text(
                     'Buy Now',
-                    style: TextStyle(fontSize: 12, color: Colors.white),
+                    style: TextStyle(fontSize: 12.sp, color: Colors.white),
                   ),
-                  SizedBox(width: 4),
-                  Icon(Icons.arrow_outward_rounded,
-                      size: 14, color: Colors.white),
+                  SizedBox(width: 4.w),
+                  Icon(
+                    Icons.arrow_outward_rounded,
+                    size: 14,
+                    color: Colors.white,
+                  ),
                 ],
               ),
             ),

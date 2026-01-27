@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustemAppbar extends StatelessWidget implements PreferredSizeWidget {
   const CustemAppbar({super.key});
@@ -18,5 +19,5 @@ class CustemAppbar extends StatelessWidget implements PreferredSizeWidget {
   
   @override
   // TODO: implement preferredSize
-  Size get preferredSize => Size .fromHeight(50);
+  Size get preferredSize => Size .fromHeight(50.h);
 }

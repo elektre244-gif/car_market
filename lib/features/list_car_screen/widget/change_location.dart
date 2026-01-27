@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ChangeLocation extends StatelessWidget {
   const ChangeLocation({super.key});
@@ -16,7 +17,7 @@ class ChangeLocation extends StatelessWidget {
                         Text(
                           'Change location',
                           style: TextStyle(
-                            fontSize: 10,
+                            fontSize: 10.sp,
                             fontWeight: FontWeight.bold,
                           ),
                         ),

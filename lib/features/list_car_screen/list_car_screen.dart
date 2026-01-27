@@ -5,6 +5,7 @@ import 'package:flutter_application_1/features/list_car_screen/widget/contanier_
 import 'package:flutter_application_1/features/list_car_screen/widget/coustem_text_field.dart';
 import 'package:flutter_application_1/features/list_car_screen/widget/custem_appBar.dart';
 import 'package:flutter_application_1/features/list_car_screen/widget/filter_sort_contanier.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
 class ListCarScreen extends StatelessWidget {
@@ -23,13 +24,13 @@ class ListCarScreen extends StatelessWidget {
             children: [
         
               CoustemTextField(),
-              SizedBox(height: 23),
+              SizedBox(height: 23.h),
 
               Row(
                 children: [
                
                   FilterSortContanier(name: 'Filters',color: Color(0xffFFFFFF),),
-                  SizedBox(width: 19),
+                  SizedBox(width: 19.w),
 
                  
                   FilterSortContanier(name: 'Sort',color: Color(0xffF9BE33),),
@@ -38,7 +39,7 @@ class ListCarScreen extends StatelessWidget {
                 ],
               ),
 
-              SizedBox(height: 17),
+              SizedBox(height: 17.h),
 
              
               Row(
@@ -47,24 +48,24 @@ class ListCarScreen extends StatelessWidget {
                     child: Text(
                       '500 used car in your location',
                       style: TextStyle(
-                        fontSize: 14,
+                        fontSize: 14.sp,
                         fontWeight: FontWeight.bold,
                         color: Color(0xff000000),
                       ),
                     ),
                   ),
                   Container(
-                    height: 31,
-                    width: 105,
+                    height: 31.h,
+                    width: 105.w,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(10.r),
                       color: Color(0xffF9BE33),
                     ),
                     child: Center(
                       child: Text(
                         'Switch to Sell',
                         style: TextStyle(
-                          fontSize: 12,
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.bold,
                           color: Color(0xffFFFFFF),
                         ),
@@ -74,7 +75,7 @@ class ListCarScreen extends StatelessWidget {
                 ],
               ),
 
-              SizedBox(height: 21),
+              SizedBox(height: 21.h),
 
               
               Expanded(
