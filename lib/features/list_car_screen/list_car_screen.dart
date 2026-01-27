@@ -21,27 +21,26 @@ class ListCarScreen extends StatelessWidget {
           padding: const EdgeInsets.all(20.0),
           child: Column(
             children: [
-              // Search Field
+        
               CoustemTextField(),
               SizedBox(height: 23),
 
-              // Filters, Sort, Location Row
               Row(
                 children: [
-                  // filters Button
+               
                   FilterSortContanier(name: 'Filters',color: Color(0xffFFFFFF),),
                   SizedBox(width: 19),
 
-                  // Sort Button
+                 
                   FilterSortContanier(name: 'Sort',color: Color(0xffF9BE33),),
-                  // Change Location
+             
                  ChangeLocation(),
                 ],
               ),
 
               SizedBox(height: 17),
 
-              // Cars Count & Switch Button
+             
               Row(
                 children: [
                   Expanded(
@@ -77,7 +76,7 @@ class ListCarScreen extends StatelessWidget {
 
               SizedBox(height: 21),
 
-              // Cars Grid
+              
               Expanded(
                 child: GridView.builder(
                   padding: const EdgeInsets.only(bottom: 40),
