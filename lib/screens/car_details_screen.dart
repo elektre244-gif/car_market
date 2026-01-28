@@ -1,11 +1,9 @@
 import 'package:car_ui_temp/widgets/two_buttons.dart';
 import 'package:flutter/material.dart';
 import '../widgets/car_image_slider.dart';
-import '../widgets/car_gallery.dart_row.dart';
 import '../widgets/book_now_button.dart';
 import '../widgets/car_title_price.dart';
 import '../widgets/car_gallery_row.dart';
-import '../widgets/two_buttons.dart.dart';
 
 
 class CarDetailsScreen extends StatelessWidget {
