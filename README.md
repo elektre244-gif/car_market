@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # flutter_application_1
+=======
+# car_ui_temp
+>>>>>>> mahmoud
 
 A new Flutter project.
 
@@ -14,4 +18,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+<<<<<<< HEAD
 ![Image Alt](https://github.com/elektre244-gif/car_market/blob/fdc11f1413837008b7bda9b37c652cf793008219/Screenshot%202026-01-27%20123003.png)
+=======
+>>>>>>> mahmoud

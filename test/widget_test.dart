@@ -6,15 +6,25 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:flutter_application_1/car_market.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:flutter_application_1/main.dart';
+=======
+import 'package:flutter_test/flutter_test.dart';
+
+import 'package:car_ui_temp/main.dart';
+>>>>>>> mahmoud
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
+<<<<<<< HEAD
     await tester.pumpWidget(CarMarket());
+=======
+    await tester.pumpWidget(const MyApp());
+>>>>>>> mahmoud
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
