@@ -61,6 +61,8 @@ flutter:
   assets:
      - assets/GOOGLE.png
      - assets/arrow.jpeg
+     - assets/Suzuki.jpg
+     - assets/360.png
 
 
 

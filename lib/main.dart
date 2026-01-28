@@ -1,3 +1,4 @@
+import 'package:car_ui_temp/screens/car_details_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/login_screen.dart';
 
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      home: CarDetailsScreen(),
     );
   }
 }
