@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/features/list_car_screen/list_car_screen.dart';
+import 'package:flutter_application_1/features/start_screen/star_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:lottie/lottie.dart';
 
-class CarMarket extends StatelessWidget {
+class CarMarket extends StatefulWidget {
   const CarMarket({super.key});
 
+  @override
+  State<CarMarket> createState() => _CarMarketState();
+}
+
+class _CarMarketState extends State<CarMarket> {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -13,7 +19,7 @@ class CarMarket extends StatelessWidget {
       splitScreenMode: true,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: ListCarScreen(),
+        home:StartScreen(),
       ),
     );
   }

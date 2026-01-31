@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_application_1/core/widgets/custome_text_form_field.dart';
 import 'package:flutter_application_1/features/list_car_screen/widget/change_location.dart';
 import 'package:flutter_application_1/features/list_car_screen/widget/contanier_car_info.dart';
-import 'package:flutter_application_1/features/list_car_screen/widget/coustem_text_field.dart';
 import 'package:flutter_application_1/features/list_car_screen/widget/custem_appBar.dart';
 import 'package:flutter_application_1/features/list_car_screen/widget/filter_sort_contanier.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -23,7 +23,7 @@ class ListCarScreen extends StatelessWidget {
           child: Column(
             children: [
         
-              CoustemTextField(),
+             CustomeTextFormField(text: 'Search Cars..',suffixIcon: Icon(Icons.search),),
               SizedBox(height: 23.h),
 
               Row(
