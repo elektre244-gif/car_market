@@ -20,4 +20,4 @@ samples, guidance on mobile development, and a full API reference.
 <<<<<<< HEAD
 ![Image Alt](https://github.com/elektre244-gif/car_market/blob/fdc11f1413837008b7bda9b37c652cf793008219/Screenshot%202026-01-27%20123003.png)
 =======
-
+![Image Alt](https://github.com/elektre244-gif/car_market/blob/e511b2a8149edd9cac522eda993ee720a1cf5957/Screenshot%202026-01-31%20032110.png)
