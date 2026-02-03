@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/features/home_sale_screen/home_sale_screen.dart';
+import 'package:flutter_application_1/features/list_car_screen/list_car_screen.dart';
+import 'package:flutter_application_1/features/splash_screen/splash_screen.dart';
 import 'package:flutter_application_1/features/start_screen/star_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:lottie/lottie.dart';
+
 
 class CarMarket extends StatefulWidget {
   const CarMarket({super.key});
@@ -19,7 +22,7 @@ class _CarMarketState extends State<CarMarket> {
       splitScreenMode: true,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home:StartScreen(),
+        home:StartScreen()
       ),
     );
   }

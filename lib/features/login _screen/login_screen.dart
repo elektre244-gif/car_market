@@ -20,9 +20,11 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
+    
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
+        backgroundColor: Colors.black,
         resizeToAvoidBottomInset: true,
         body: SafeArea(
           child: SingleChildScrollView(
@@ -63,7 +65,31 @@ class _LoginScreenState extends State<LoginScreen> {
       
                         SizedBox(height: 10.h),
                         Text(
-                          'Email address',
+                          'Enter your Name',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 25.sp,
+                            color: Colors.white,
+                          ),
+                        ),
+                        SizedBox(height: 10.h),
+                        TextFormField(
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return 'Please enter your Name';
+                            }
+                            return null;
+                          },
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16.sp,
+                          ),
+                          decoration: _inputDecoration('Enter your Name'),
+                        ),
+      
+                        SizedBox(height: 10.h),
+                        Text(
+                          "Email address",
                           style: TextStyle(
                             fontFamily: 'Montserrat',
                             fontSize: 25.sp,
@@ -82,39 +108,15 @@ class _LoginScreenState extends State<LoginScreen> {
                             color: Colors.white,
                             fontSize: 16.sp,
                           ),
-                          decoration: _inputDecoration('Enter your email'),
-                        ),
-      
-                        SizedBox(height: 10.h),
-                        Text(
-                          'Mobile number',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 25.sp,
-                            color: Colors.white,
-                          ),
-                        ),
-                        SizedBox(height: 10.h),
-                        TextFormField(
-                          validator: (value) {
-                            if (value == null || value.isEmpty) {
-                              return 'Please enter your mobile number';
-                            }
-                            return null;
-                          },
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16.sp,
-                          ),
                           decoration:
-                              _inputDecoration('Enter your mobile number'),
+                              _inputDecoration('Enter your email'),
                         ),
       
                         SizedBox(height: 10.h),
                         Text(
                           'Password',
       
-      style: TextStyle(
+                            style: TextStyle(
                             fontFamily: 'Montserrat',
                             fontSize: 25.sp,
                             color: Colors.white,

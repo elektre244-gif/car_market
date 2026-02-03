@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_application_1/core/widgets/custome_text_form_field.dart';
+import 'package:flutter_application_1/features/home_sale_screen/home_sale_screen.dart';
 import 'package:flutter_application_1/features/list_car_screen/widget/change_location.dart';
 import 'package:flutter_application_1/features/list_car_screen/widget/contanier_car_info.dart';
+import 'package:flutter_application_1/features/list_car_screen/widget/costum_switch_to_sell.dart';
 import 'package:flutter_application_1/features/list_car_screen/widget/custem_appBar.dart';
 import 'package:flutter_application_1/features/list_car_screen/widget/filter_sort_contanier.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -54,24 +56,9 @@ class ListCarScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Container(
-                    height: 31.h,
-                    width: 105.w,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.r),
-                      color: Color(0xffF9BE33),
-                    ),
-                    child: Center(
-                      child: Text(
-                        'Switch to Sell',
-                        style: TextStyle(
-                          fontSize: 12.sp,
-                          fontWeight: FontWeight.bold,
-                          color: Color(0xffFFFFFF),
-                        ),
-                      ),
-                    ),
-                  ),
+                  CostumSwitchToSell(name: 'Switch To Sale',onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeSaleScreen()));
+                  },),
                 ],
               ),
 

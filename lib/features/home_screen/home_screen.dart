@@ -3,9 +3,9 @@ import 'package:flutter_application_1/core/widgets/custome_text_form_field.dart'
 import 'package:flutter_application_1/features/home_screen/widget/car-steps_container.dart';
 import 'package:flutter_application_1/features/home_screen/widget/car_container2.dart';
 import 'package:flutter_application_1/features/home_screen/widget/custome_app_bar_home.dart';
-import 'package:flutter_application_1/features/home_screen/widget/custome_bottom_nav_Bar.dart';
-import 'package:flutter_application_1/features/home_screen/widget/row_brand_png.dart';
-import 'package:flutter_application_1/features/home_screen/widget/row_brand_svg.dart';
+import 'package:flutter_application_1/core/widgets/custome_bottom_nav_Bar.dart';
+import 'package:flutter_application_1/core/widgets/row_brand_png.dart';
+import 'package:flutter_application_1/core/widgets/row_brand_svg.dart';
 import 'package:flutter_application_1/features/home_screen/widget/row_select_barnd.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

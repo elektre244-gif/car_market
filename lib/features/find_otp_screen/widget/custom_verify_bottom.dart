@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-class GetOtpButton extends StatelessWidget {
-  final VoidCallback onPressed;
- final String name;
-  const GetOtpButton({super.key, required this.onPressed, required this.name});
+
+class CustomVerifyBottom extends StatelessWidget {
+
+   final VoidCallback onPressed;
+  const CustomVerifyBottom({super.key, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -20,19 +21,19 @@ class GetOtpButton extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              name,
+              "Verify",
               style: TextStyle(
-                fontSize: 20.sp,
+                fontSize: 30.sp,
                 fontWeight: FontWeight.w500,
                 color: Colors.white,
               ),
             ),
             SizedBox(width: 8.w),
            InkWell(
-             child: Icon(Icons.arrow_outward_rounded,size:  25,
+             child: Image.asset("assets/icons/arrow_icon.png",)
             
               
-              ),
+             
            )
           ],
         ),

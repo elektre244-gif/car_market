@@ -15,7 +15,6 @@ class CustomeBottomNavBar extends StatelessWidget {
             'assets/icons/Bag 5.svg',
             width: 22.w,
             height: 22.h,
-            // ignore: deprecated_member_use
             color: Colors.black,
           ),
           activeIcon: SvgPicture.asset(
@@ -27,18 +26,14 @@ class CustomeBottomNavBar extends StatelessWidget {
           label: "",
         ),
         BottomNavigationBarItem(
+          
           icon: Image.asset(
             'assets/icons/Heart 1.png',
             width: 25.w,
             height: 25.h,
             color: Colors.black,
           ),
-          activeIcon: Image.asset(
-            'assets/icons/Heart 1.png',
-            width: 25.w,
-            height: 25.h,
-            color: Colors.amber,
-          ),
+         
           label: "",
         ),
         BottomNavigationBarItem(

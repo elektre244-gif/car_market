@@ -28,11 +28,11 @@ class CustomeTextFormField extends StatelessWidget {
         
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12.r),
-          borderSide: BorderSide(color: Colors.white),
+          borderSide: BorderSide(width: 1,color: Colors.amber),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12.r),
-          borderSide: BorderSide(color: Colors.amber),
+          borderSide: BorderSide(width: 1,color: Colors.amber),
         ),
       ),
     );

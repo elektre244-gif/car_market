@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/widgets/custome_text_form_field.dart';
+import 'package:flutter_application_1/features/buy_or_sale_screen/buy_or_sale_screen.dart';
+import 'package:flutter_application_1/features/find_otp_screen/find_otp_screen.dart';
 import 'package:flutter_application_1/features/home_screen/home_screen.dart';
+import 'package:flutter_application_1/features/opt_screen/widget/custom_sign_up_contanier.dart';
+import 'package:flutter_application_1/features/opt_screen/widget/custom_text_rich.dart';
+import 'package:flutter_application_1/features/opt_screen/widget/hello_text.dart';
 import 'widget/get_Otp_Button.dart';
 import 'widget/welcome_text.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -36,31 +41,12 @@ class _OtpScreenState extends State<OtpScreen> {
             child: SingleChildScrollView(
               padding: EdgeInsets.all(15),
               child: Form(
-                key: _formKey, // ربط الفورم بالمفتاح
+                key: _formKey, 
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 30.h),
-                    // Top Row
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          "Hello!",
-                          style: TextStyle(color: Colors.white, fontSize: 26.sp),
-                        ),
-                        IconButton(
-                          icon: Icon(
-                            Icons.arrow_back_ios_new,
-                            color: Colors.white,
-                            size: 20.sp,
-                          ),
-                          onPressed: () {
-                            Navigator.pop(context);
-                          },
-                        ),
-                      ],
-                    ),
+                   HelloText(),
                     SizedBox(height: 22.85.h),
                     CustomWelcomeText(),
                     SizedBox(height: 95.h),
@@ -82,91 +68,19 @@ class _OtpScreenState extends State<OtpScreen> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const HomeScreen(),
+                              builder: (context) =>FindOtpScreen(),
                             ),
                           );
                         } else {
                           print('Error: Form is invalid or empty');
                         }
-                      },
+                      }, name: 'Get Otp',
                     ),
                     SizedBox(height: 50.h),
-                    Center(
-                      child: Text.rich(
-                        TextSpan(
-                          text: "Create a new ",
-                          style: TextStyle(
-                            color: Colors.white70,
-                            fontSize: 25.sp,
-                          ),
-                          children: [
-                            TextSpan(
-                              text: "account",
-                              style: TextStyle(
-                                color: Color(0xffFFB23E),
-                                decoration: TextDecoration.underline,
-                                decorationThickness: 1,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 40.h),
-                    Center(
-                      child: Text(
-                        "Or",
-                        style: TextStyle(color: Colors.white, fontSize: 20.sp),
-                      ),
-                    ),
+                CustomTextRich(),
+                  
                     SizedBox(height: 36.h),
-                    Container(
-                      height: 52.h,
-                      padding: EdgeInsets.symmetric(horizontal: 8.w),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12.r),
-                        border: Border.all(color: Colors.white),
-                      ),
-                      child: Row(
-                        children: [
-                          Text(
-                            "Sign up with",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 21.sp,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          Spacer(),
-                          Container(
-                            height: 40.h,
-                            width: 40.w,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(12.r),
-                            ),
-                            child: Image.asset(
-                              'assets/images/google.png',
-                              fit: BoxFit.contain,
-                            ),
-                          ),
-                          SizedBox(width: 20.w),
-                          Container(
-                            height: 40.h,
-                            width: 40.w,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(12.r),
-                            ),
-                            child: Icon(
-                              Icons.apple,
-                              color: Colors.black,
-                              size: 36.sp,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
+                   CustomSignUpContanier(),
                     SizedBox(height: 30.h),
                   ],
                 ),
